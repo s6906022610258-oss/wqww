@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(245, 208, 139);
+}
+h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+p{
+    color: rgb(250, 141, 141);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+a:link {
+  color: rgb(174, 189, 249);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(249, 135, 154);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(161, 221, 244);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: rgb(244, 249, 188);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 150%;
+  background-color: #796464;
+  height: 150px;
+   /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+   height: 320px;
+}
+
+
+@media (max-width: 600px) {
+     nav , article{
+    width: 100%;
+    height: auto;
+     }
+    }
